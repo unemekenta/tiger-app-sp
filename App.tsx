@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NativeBaseProvider} from 'native-base';
+import HomeStack from './components/organisms/HomeStack';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app! hi kenta</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <NativeBaseProvider>
+        <HomeStack/>
+      </NativeBaseProvider>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
