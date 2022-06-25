@@ -1,3 +1,9 @@
+start:
+	yarn start
+
+start-n:
+	yarn start-without-cache
+
 lint-fix:
 	npm run lint-fix
 
