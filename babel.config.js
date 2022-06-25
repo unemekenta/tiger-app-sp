@@ -1,15 +1,22 @@
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
     plugins: [
       [
-        "module-resolver",
+        'module-resolver',
         {
-          extensions: [".tsx", ".ts", ".js", ".json"],
+          extensions: ['.tsx', '.ts', '.js', '.json'],
         },
       ],
-      "react-native-reanimated/plugin",
+      [
+        'module:react-native-dotenv',
+        {
+          moduleName: '@env',
+          path: '.env',
+        },
+      ],
+      'react-native-reanimated/plugin',
     ],
   };
 };
