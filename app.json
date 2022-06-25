@@ -13,10 +13,10 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
+      "bundleIdentifier": "com.companyname.appname",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
